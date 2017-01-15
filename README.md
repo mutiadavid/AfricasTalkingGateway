@@ -1,6 +1,6 @@
 ## Golang AfricasTalking gateway implementation
 
-More info [GoDoc](http://godoc.org/github.com/astaxie/beego)
+More info [GoDoc](http://godoc.org/github.com/davidmutia47/AfricasTalkingGateway)
 
 ##Quick Start
 ######Download and install
