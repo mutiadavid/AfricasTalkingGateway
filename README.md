@@ -1,6 +1,6 @@
 ## Golang AfricasTalking gateway implementation
 
-More info [](http://urltodoc)
+More info [GoDoc](http://godoc.org/github.com/astaxie/beego)
 
 ##Quick Start
 ######Download and install
@@ -64,5 +64,5 @@ func main(){
 
 ## LICENSE
 
-licensed under the Apache Licence, Version 2.0
-(http://www.apache.org/licenses/LICENSE-2.0.html).
+licensed under BSD-style license
+
