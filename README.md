@@ -8,7 +8,7 @@ More info [GoDoc](http://godoc.org/github.com/davidmutia47/AfricasTalkingGateway
     go get github.com/davidmutia47/AfricasTalkingGateway
 
 ##Example Sending SMS
-######Create file `hello.go`
+######Create file `sendSms.go`
 ```go
 package main
 
@@ -53,14 +53,27 @@ func main(){
 
 ## Features
 
-* 
-* 
-* 
+*SMS [Documentation](http://docs.africastalking.com/sms)
+######Sending sms
+######Fetching sms 
+*Sbscriptions [Documentation](http://docs.africastalking.com/subscriptions)
+#####Creating subscription
+#####Deleting subscription
+#####Fetching  subscriptions 
+*Voice [Documentation](http://docs.africastalking.com/voice)
+#####Making a call
+#####Fetching queued calls
+#####Uploading media file
+*Airtime - buying airtime for a number [Documentation](http://docs.africastalking.com/airtime)
+*Mpesa payments [Documentation](http://docs.africastalking.com/payments)
+#####B2C
+#####B2B
+#####C2B
 
 ## Documentation
 
-*
-*
+*AfricasTalking Doc [Documentation](http://docs.africastalking.com)
+*Implementation Doc [GoDoc](http://godoc.org/github.com/davidmutia47/AfricasTalkingGateway)
 
 ## LICENSE
 

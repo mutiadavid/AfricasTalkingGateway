@@ -57,6 +57,8 @@ type MessageParameters struct{
 	RetryDurationInHours string
 }
 
+
+
 //Function to handle sending messages
 func (a AfricasTalking) SendMessage(to,message string,params ...MessageParameters) ([]interface{},error) {
 	var recipients []interface{}
@@ -104,6 +106,7 @@ func (a AfricasTalking) SendMessage(to,message string,params ...MessageParameter
 	return recipients,a.AfricasTalkingGatewayException(string(responseBody))
 
 }
+
 
 
 func (a AfricasTalking) FetchMessages(lastReceivedId int) ([]interface{},error){
@@ -208,16 +211,18 @@ func (a AfricasTalking) Call(from,to string) (map[string]interface{},error) {
 	if err!=nil {
 		return response,a.AfricasTalkingGatewayException(err.Error())
 	}
-	if a.ResponseCode == 201{
+	if a.ResponseCode == 200{
 		var jsonData interface{}
 		err := json.Unmarshal(responseBody,&jsonData)
 		if err != nil{
-			return response,a.AfricasTalkingGatewayException(err.Error())
+			return response,a.AfricasTalkingGatewayException(err.Error()+"############# json marshal")
 		}
 		response= jsonData.(map[string]interface{})
 		return response,nil
+	}else{
+		return response,a.AfricasTalkingGatewayException(string(responseBody)+"########### "+strconv.Itoa(a.ResponseCode))	
 	}
-	return response,a.AfricasTalkingGatewayException(string(responseBody))
+	
 }
 
 func (a AfricasTalking) GetNumQueuedCalls(phoneNumber string,queueName ...string) (map[string]interface{},error){

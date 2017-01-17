@@ -50,4 +50,7 @@ Example of sending message
 
 more information: https://github.com/davidmutia47/AfricasTalkingGateway
 */
+
+//Package AfricasTalkingGateway provides AfricasTalking api implementation in golang
+//
 package AfricasTalkingGateway
