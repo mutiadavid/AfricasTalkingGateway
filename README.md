@@ -57,7 +57,7 @@ func main(){
 ## Features
 
 * SMS ------------------------------------------------>[Documentation](http://docs.africastalking.com/sms)
-    *   ##### Sending sms
+    *   Sending sms
     *   Fetching sms 
 * Sbscriptions --------------------------------------->[Documentation](http://docs.africastalking.com/subscriptions)
     *   Creating subscription
