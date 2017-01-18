@@ -31,11 +31,14 @@ func main(){
     //Create instance of getWay
     getWay := AfricasTalkingGateway.AfricasTalkingGateway(username,apikey)
 
+    //sandbox
+    //getWay := AfricasTalkingGateway.AfricasTalkingGateway(username,apikey,"sandbox")
+
     //call sendMessage to handle sending the message
     response,err := getWay.sendMessage(recipients,message)
 
     //handle errors if encountered an error
-    if err:=nil{
+    if err!=nil{
     	//handle error
     }
 
