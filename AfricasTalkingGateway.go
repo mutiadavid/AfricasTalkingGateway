@@ -31,6 +31,8 @@ type AfricasTalking struct{
 	ResponseCode int
 }
 
+//Check git desktop is working
+
 
 func (a AfricasTalking) AfricasTalkingGatewayException(err string) (error) {
 	return errors.New(err)
