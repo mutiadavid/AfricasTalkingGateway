@@ -2,13 +2,13 @@
 
 More info [GoDoc](http://godoc.org/github.com/davidmutia47/AfricasTalkingGateway)
 
-##Quick Start
-######Download and install
+## Quick Start
+###### Download and install
 
     go get github.com/davidmutia47/AfricasTalkingGateway
 
-##Example Sending SMS
-######Create file `sendSms.go`
+## Example Sending SMS
+###### Create file `sendSms.go`
 ```go
 package main
 
